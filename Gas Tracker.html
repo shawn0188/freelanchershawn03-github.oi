@@ -1,0 +1,737 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>new project</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+<script src="https://kit.fontawesome.com/6a8e86b2be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style file4.css" />
+    <link rel="stylesheet" href="style file3.css" />
+	<link rel="stylesheet" href="style file2.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<!-----navbar----->
+	<div class="input-group group-inputs mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text"><select style="border: none;
+    outline: none;
+    background: #dddddd36;
+">
+	<option >All Filters</option>
+	<option >Addresses</option>
+	<option >Tokens</option>
+	<option >Nam tags</option>
+	<option >Labels</option>
+	<option >Websites</option>
+	</select></span>
+  </div>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"placeholder="Search by Address/Txn Hash/Block/Token/Ens">
+  <div class="input-group-append">
+    <span class="input-group-text bg-success"><i class="fas fa-search text-white p-2"></i></span>
+  </div>
+</div>
+	
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+	<div class="container">
+  <a class="navbar-brand" href="#"><img width="50px"src="assest/logo.png" alt="" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav ml-auto ">
+      <li class="nav-item active"style="padding:0px 10px ;">
+        <a class="nav-link px-4" href="index.html"style="position:relative">Home </a>
+      </li>
+      
+	   <li class="nav-item dropdown"style="padding:0px 10px ;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="position:relative">
+          Blockchain
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="view txns.html">View Txns</a>
+          <a class="dropdown-item" href="View Pending Txns.html">View pending Txns</a>
+          <a class="dropdown-item" href="View Contract Internal Txns.html">View Contract Internal Txns</a>
+		    <div class="dropdown-divider"></div>
+			     <a class="dropdown-item" href="view Block.html">View Blocks</a>
+          <a class="dropdown-item" href="Forked Blocks (Reorgs).html">Forked Blocks (Reorgs)</a>
+          <a class="dropdown-item" href="Uncles.html">View Uncles</a>
+		  <div class="dropdown-divider"></div>
+			     <a class="dropdown-item" href="top account.html">Top Accounts</a>
+          <a class="dropdown-item" href="verified Contacts.html">Verified Contracts</a>
+          
+        </div>
+      </li>
+      
+	  <li class="nav-item dropdown"style="padding:0px 10px ;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="position:relative">
+          Tokens
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="ERC20 Top Tokens.html">ERC20 Top Tokens</a>
+          <a class="dropdown-item" href="View ERC20 Transfers.html">View ERC20 Transfers</a>
+          <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="ERC21 Top Tokens.html">ERC21 Top Tokens</a>
+          <a class="dropdown-item" href="View ERC721 Transfers.html">View ERC21 Transfers</a>
+        </div>
+      </li>
+	  
+	  <li class="nav-item dropdown"style="padding:0px 10px ;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="position:relative">
+          Resources
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Charts & Stats.html">Charts & Stats</a>
+          <a class="dropdown-item" href="Top Statistics.html">Top Statistics</a>
+           <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="Ethereum Directory.html">Ethereum Directory</a>
+          <a class="dropdown-item" href="Explore dApps.html">Explore DApps</a>
+        </div>
+      </li> 
+	  
+	   <li class="nav-item dropdown"style="padding:0px 10px ;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="position:relative">
+          More
+        </a>
+        <div class="dropdown-menu menu-drop" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item item-dropdown" href="#"style="width: 114px;
+    text-align: center;
+    margin: 20px 0px 0px 9px;font-weight:bold">Developers</a>
+          <a class="dropdown-item item-dropdown " style="width: 114px;
+    font-size: 15px;
+    color: #873f3f;" href="#"><i class="fas fa-angle-right"></i> APIS</a>
+          <a class="dropdown-item item-dropdown " style="width:182px; font-size: 15px;
+    color: #873f3f;"href="Verify Contact.html "><i class="fas fa-angle-right"></i> Verify Contact </a>
+	      <a class="dropdown-item item-dropdown" style="width:182px; font-size: 15px;
+    color: #873f3f;"href="byte to Opcode.html"><i class="fas fa-angle-right"></i> Byte to Opcode</a>
+          <a class="dropdown-item item-dropdown" style="width:182px; font-size: 15px;
+    color: #873f3f;"href="Broadcast txn.html"><i class="fas fa-angle-right"></i> Broadcast TXN</a>
+          <a class="dropdown-item item-dropdown" style="width:200px; font-size: 15px;
+    color: #873f3f;"href="vyper Online compile.html"><i class="fas fa-angle-right"></i> Vyper Online Comiler</a>
+		  
+		  
+		   <a class="dropdown-item item-dropdown" href="#"style="    width: 114px;
+    text-align: center;
+    margin: -176px 0px 0px 222px;
+    font-weight: bold;">Defi Stuff</a>
+          <a class="dropdown-item item-dropdown" style="width: 182px;
+    font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 216px" href="Defi Leaderboard.html"><i class="fas fa-angle-right"></i> Defi Leaderboard</a>
+          <a class="dropdown-item item-dropdown" style="width:182px; font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 216px"href="DEX Tracker.html"><i class="fas fa-angle-right"></i> DEX Tracker </a>
+	      <a class="dropdown-item item-dropdown" style="width:182px; font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 216px"href="Yield Farms.html"><i class="fas fa-angle-right"></i> Yield Farms <span class="new" style="font-size: 8px;
+    color: #fff;
+    background: #25c425;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0px 0px 0px 10px;">New</span></a>
+          <a class="dropdown-item item-dropdown" style="width:280px; font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 216px"href="yield farming calcuiator.html"><i class="fas fa-angle-right"></i> Yield Farming Calcultor <span class="new" style="font-size: 8px;
+    color: #fff;
+    background: #25c425;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0px 0px 0px 10px;">New</span></a>
+       
+		  
+        <a class="dropdown-item item-dropdown" href="#"style="width: 114px;
+    text-align: center;
+    margin: -143px 0px 0px 500px;
+    font-weight: bold;">Explore</a>
+          <a class="dropdown-item item-dropdown" style="width: 182px;
+    font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 494px" href="Gas Tracker.html"><i class="fas fa-angle-right"></i> Gas Tracker</a>
+          <a class="dropdown-item item-dropdown" style="width:182px; font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 494px"href="Node Tracker.html"><i class="fas fa-angle-right"></i> Node Tracker </a>
+	      <a class="dropdown-item item-dropdown" style="width:220px; font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 494px"href="Ethereum Name lookup.html"><i class="fas fa-angle-right"></i> Ethereum Name Lookup</a>
+          <a class="dropdown-item item-dropdown" style="width:182px; font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 494px"href="Etherscan Connect.html"><i class="fas fa-angle-right"></i>  Etherscan connect</a>
+        
+		
+		  <a class="dropdown-item item-dropdown" href="#"style="width: 114px;
+    text-align: center;
+    margin: -143px 0px 0px 817px;
+    font-weight: bold;">Tools</a>
+          <a class="dropdown-item item-dropdown" style="width: 182px;
+    font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 822px" href="Label Word Cloud.html"><i class="fas fa-angle-right"></i> Label Word Cloud</a>
+          <a class="dropdown-item item-dropdown" style="width:182px; font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 822px"href="yield farming calcuiator.html"><i class="fas fa-angle-right"></i> Mining Calcultor </a>
+	      <a class="dropdown-item item-dropdown" style="width:182px; font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 822px"href="List of Message signatures.html"><i class="fas fa-angle-right"></i> Verified Signature</a>
+          <a class="dropdown-item item-dropdown" style="width:182px; font-size: 15px;
+    color: #873f3f;margin:0px 0px 0px 822px"href="#"><i class="fas fa-angle-right"></i>  EthProtect <span class="new" style="font-size: 8px;
+    color: #fff;
+    background: #25c425;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0px 0px 0px 10px;">Eats</span></a>
+        </div>
+      </li>
+	  <li class="nav-item active" style="padding:0px 10px ;border-right:1px solid #ddd;border-left:1px solid #ddd;"style="position:relative">
+        <a class="nav-link px-4" href="login from.html"><i class="fas fa-user-circle p-1"></i>Sing in</a>
+      </li>
+	 <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img style="    width: 20px;
+    height: 20px;
+    margin: 1px 10px 0px 19px;
+    float: left;" src="assest/ethereum-icon.png" alt="" />
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+     
+    </ul>
+  </div>
+  </div>
+</nav>
+
+	<!-----header------>
+<h5 class="Ethereum-gas-tracke">Etereum Gas Tracker</h5>
+<div class="rank-block"> 
+<div class="low">
+<span class="low-2">Low</span>
+<span class="gwei text-success">44 gwei</span>
+<span class="min">$0.33 | ~ 10 min:7</span>
+<span class="secs-5">secs</span>
+</div>
+<div class="Average">
+<span class="low-2">Low</span>
+<span class="gwei text-success">44 gwei</span>
+<span class="min">$0.33 | ~ 10 min:7</span>
+<span class="secs-5">secs</span></div>
+
+<div class="Height"> <span class="low-2">Low</span>
+<span class="gwei text-success">44 gwei</span>
+<span class="min">$0.33 | ~ 10 min:7</span>
+<span class="secs-5">secs</span> </div>
+<div class="Gas-Price"> 
+<h3 class="gas-price-2">GAS PRICE ESTIMATOR
+</h3>
+<button class="btn btn-outline-primary view-API">View API</button>
+<span class="pro">
+<div class="progress" style="height: 3px;">
+  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div></span>
+
+<div class="gas-price-3"> 
+<img width="50px"src="assest/icon-35.svg" alt="" />
+<span class="gas-price-4">GAS PRICE</span>
+<span class="gas-price-5">350gwei</span>
+
+</div>
+ <div class="EST-Duration"> 
+ <img width="50px"src="assest/icon-clock.svg" alt="" />
+ <span class="gas-price-6">EST DURATION</span>
+<span class="gas-price-7">350secs ~ 00 hr 00 min 30 secs</span>
+ 
+ </div>
+</div>
+
+
+
+</div>
+<div class="gharp-block"> 
+ <section id="chart-section" class="chart-section clearfix">
+            <div class="jarallax" style="background-image: url(http://demo.xstheme.com/html-preview/criptofy/assets/images/chart-sec-bg.jpg)">
+                <div class="overlay-black sec-ptb-100">
+                    <div class="container">
+                                       
+                        <div id="chartdiv"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+</div>
+
+
+<div class="ads"> 
+
+<img  style="  height: 70px;
+    margin: 47px 0px 0px 426px;
+    width: 600px;"src="assest/roobet_1140x90.png" alt="" />
+</div>
+<!----navbar-------->
+<div class="gases-guzziers" style=" width: 1200px;
+    height: 932px;
+    box-shadow: 2px 8px 5px 8px #bca8a8;
+    margin: 107px 0px 0px 85px;
+    border-radius: 23px;">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Gas Guzzlers</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Gas Spenders</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Historical Gas Oracle Prices</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+  <span class="top-Gas-Gazziers font-weight-normal" > 
+ Top 50 Gas Guzzlers (Contracts / Accounts that consume a lot of Gas) 
+  </span>
+  <span class="last-updated-at-block font-weight-normal">Last updated at Block <a href="#">10954624</a></span>
+  
+  <div class="rank-address">  
+  <span class="rank-8">Rank</span>
+  <span class="address-9">Address</span>
+  <span class="Fees-Last">Feel Last 3hrs</span>
+  <span class="Used-3hrs"><i class="fas fa-sort"></i> % Used 3hrs</span>
+  <span class="Feels-Last-2">Fees Last 24hrs</span>
+  <span class="Used-24hrs"><i class="fas fa-sort"></i> % Used 24hrs</span>
+  <span class="Analytics">analytics</span>
+ 
+  </div>
+  <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  <div class="all-button">
+  <span class="show">Show</span>
+  <select >
+  <option >10</option>
+  <option >15</option>
+  <option >25</option>
+  <option >50</option>
+  </select>
+  <span class="entries">entries</span>
+   <button style=""class="btn btn-outline-primary first-2">First</button>
+   <button class="btn btn-outline-primary previous-2">Previous</button>
+   <button class="btn btn-outline-primary next-2">Next</button>
+   <button class="btn btn-outline-primary last-2">Last</button>
+  </div>
+</div>
+  
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  <span class="top-Gas-Gazziers font-weight-normal" > 
+ Top 50 Gas Guzzlers (Contracts / Accounts that consume a lot of Gas) 
+  </span>
+  <span class="last-updated-at-block font-weight-normal">Last updated at Block <a href="#">10954624</a></span>
+  
+  <div class="rank-address">  
+  <span class="rank-8">Rank</span>
+  <span class="address-9">Address</span>
+  <span class="Fees-Last">Feel Last 3hrs</span>
+  <span class="Used-3hrs"><i class="fas fa-sort"></i> % Used 3hrs</span>
+  <span class="Feels-Last-2">Fees Last 24hrs</span>
+  <span class="Used-24hrs"><i class="fas fa-sort"></i> % Used 24hrs</span>
+  <span class="Analytics">analytics</span>
+ 
+  </div>
+  <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  <div class="all-button">
+  <span class="show">Show</span>
+  <select >
+  <option >10</option>
+  <option >15</option>
+  <option >25</option>
+  <option >50</option>
+  </select>
+  <span class="entries">entries</span>
+   <button style=""class="btn btn-outline-primary first-2">First</button>
+   <button class="btn btn-outline-primary previous-2">Previous</button>
+   <button class="btn btn-outline-primary next-2">Next</button>
+   <button class="btn btn-outline-primary last-2">Last</button>
+  </div>
+</div>
+  
+  
+ 
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+  <span class="top-Gas-Gazziers font-weight-normal" > 
+ Top 50 Gas Guzzlers (Contracts / Accounts that consume a lot of Gas) 
+  </span>
+  <span class="last-updated-at-block font-weight-normal">Last updated at Block <a href="#">10954624</a></span>
+  
+  <div class="rank-address">  
+  <span class="rank-8">Rank</span>
+  <span class="address-9">Address</span>
+  <span class="Fees-Last">Feel Last 3hrs</span>
+  <span class="Used-3hrs"><i class="fas fa-sort"></i> % Used 3hrs</span>
+  <span class="Feels-Last-2">Fees Last 24hrs</span>
+  <span class="Used-24hrs"><i class="fas fa-sort"></i> % Used 24hrs</span>
+  <span class="Analytics">analytics</span>
+ 
+  </div>
+  <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  
+   <div class="rank-address-2">  
+   
+  <span class="rank-9 font-weight-normal"><img width="15px"src="assest/winner.png" alt="" /> <span>1</span></span>
+  <span class="address-10 font-weight-normal"><a href="#"><img width="15px"src="assest/contract.png" alt="" /> Uniswap V2: Router 2</a></span>
+  <span class="Fees-Last-2 font-weight-normal">	$99,219.25 <span>(281.30 Eth)</span></span>
+  <span class="Used-3hrs-2 font-weight-normal">22.00%</span>
+  <span class="Feels-Last-3 font-weight-normal">$927,550.05 <span>(2,587.67 Eth)</span></span>
+  <span class="Used-24hrs-2 font-weight-normal">24.24%</span>
+  <span class="Analytics-2 font-weight-normal"><img width="20px"src="assest/trend.png" alt="" /></span>
+  </div>
+  <div class="all-button">
+  <span class="show">Show</span>
+  <select >
+  <option >10</option>
+  <option >15</option>
+  <option >25</option>
+  <option >50</option>
+  </select>
+  <span class="entries">entries</span>
+   <button style=""class="btn btn-outline-primary first-2">First</button>
+   <button class="btn btn-outline-primary previous-2">Previous</button>
+   <button class="btn btn-outline-primary next-2">Next</button>
+   <button class="btn btn-outline-primary last-2">Last</button>
+  </div>
+</div>
+  
+</div>
+ </div>
+
+
+
+
+ 
+ 
+ 
+ 
+</div>
+	<footer class="clearfix">
+<div class="footer-ist"> 
+<div class="header"><img width="25px" src="assest/ethereum (3).png" alt="" /><h1>Powered by Ethereum</h1></div>
+<p>Etherscan is a Block Explorer and Analytics Platform<br/> for Ethereum, a decentralized smart contracts<br/> platform.</p>
+</div>
+ <div class="footer-2nd"> 
+ <div class="headers h4">Company</div>
+ <ul> 
+ <li><a href="#">About Us</a></li>
+ <li><a href="#">Advertise</a></li>
+ <li><a href="#">Contact Us</a></li>
+ <li><a href="#"> Brand Assets</a></li>
+ <li><a href="#">Terms of Service</a></li>
+ </ul>
+ </div>
+
+
+ <div class="footer-3nd"> 
+ <div class="headers h4">Community</div>
+ <ul> 
+ <li><a href="#">Developer APIs</a></li>
+ <li><a href="#">Knowledge Base</a></li>
+ <li><a href="#">Newseletter</a></li>
+ <li><a href="#">Network Status</a></li>
+ <li><a href="#">Disqus Comments</a></li>
+ </ul>
+ </div>
+
+ <div class="footer-4nd"> 
+ <div class="headers h4">Products</div>
+ <ul> 
+ <li><a href="#">Blockscan</a></li>
+ <li><a href="#">Libra Block Explorer</a></li>
+ <li><a href="#">Grin Explorer</a></li>
+ <li><a href="#">ETHProtect</a></li>
+ <li><a href="#">Binance smart Chain Explorer</a></li>
+ </ul>
+<p>New</p>
+ </div>
+	</footer>
+	
+	<script type="text/javascript" src="chart.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript"> 
+$('[data-toggle="tooltip"]').tooltip();
+function toggleToolTip(){
+$('#hello').tooltip('toggle');
+}
+
+</script>
+</body>
+</html>
